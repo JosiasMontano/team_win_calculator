@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>team_win_calculator</title>
+    <link rel="stylesheet" href="team_win_calculator.css">
+</head>
+<body>
+    <h1>Team Win Calculator</h1>
+    
+    <div class="teams-container">
+        <div class="team team-1">
+            <h2>RADIANT</h2>
+            <div class="player-input">
+                <label for="player1">player 1 (% victorias):</label>
+                <input type="number" id="player1" min="0" max="100" placeholder="Ingrese porcentaje">
+            </div>
+            <div class="player-input">
+                <label for="player2">player 2 (% victorias):</label>
+                <input type="number" id="player2" min="0" max="100" placeholder="Ingrese porcentaje">
+            </div>
+            <div class="player-input">
+                <label for="player3">player 3 (% victorias):</label>
+                <input type="number" id="player3" min="0" max="100" placeholder="Ingrese porcentaje">
+            </div>
+            <div class="player-input">
+                <label for="player4">player 4 (% victorias):</label>
+                <input type="number" id="player4" min="0" max="100" placeholder="Ingrese porcentaje">
+            </div>
+            <div class="player-input">
+                <label for="player5">player 5 (% victorias):</label>
+                <input type="number" id="player5" min="0" max="100" placeholder="Ingrese porcentaje">
+            </div>
+        </div>
+        
+        <div class="team team-2">
+            <h2>DIRE</h2>
+            <div class="player-input">
+                <label for="player6">player 6 (% victorias):</label>
+                <input type="number" id="player6" min="0" max="100" placeholder="Ingrese porcentaje">
+            </div>
+            <div class="player-input">
+                <label for="player7">player 7 (% victorias):</label>
+                <input type="number" id="player7" min="0" max="100" placeholder="Ingrese porcentaje">
+            </div>
+            <div class="player-input">
+                <label for="player8">player 8 (% victorias):</label>
+                <input type="number" id="player8" min="0" max="100" placeholder="Ingrese porcentaje">
+            </div>
+            <div class="player-input">
+                <label for="player9">player 9 (% victorias):</label>
+                <input type="number" id="player9" min="0" max="100" placeholder="Ingrese porcentaje">
+            </div>
+            <div class="player-input">
+                <label for="player10">player 10 (% victorias):</label>
+                <input type="number" id="player10" min="0" max="100" placeholder="Ingrese porcentaje">
+            </div>
+        </div>
+    </div>
+    
+    <button id="calculate">Calculate! </button>
+    
+    <div id="result">
+        <h2>Resultado</h2>
+        <p>Probability Blue Team: <span id="team1-percentage" class="percentage">0%</span></p>
+        <p>Probability Red Team: <span id="team2-percentage" class="percentage">0%</span></p>
+        <div id="winner" class="winner"></div>
+    </div>
+    
+    <script src="team_win_calculator.js"></script>
+</body>
+</html>
