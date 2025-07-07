@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0a192f;
+    color: #e6f1ff;
+}
+
+h1 {
+    color: #64ffda;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+.teams-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.team {
+    width: 48%;
+    background-color: #112240;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.team:hover {
+    transform: translateY(-5px);
+}
+
+.team-1 {
+    border-top: 5px solid #1a73e8;
+}
+
+.team-2 {
+    border-top: 5px solid #ff4081;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ccd6f6;
+}
+
+.player-input {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #8892b0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    background-color: #233554;
+    border: 1px solid #1e2a47;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #e6f1ff;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #64ffda;
+    box-shadow: 0 0 8px rgba(100, 255, 218, 0.4);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background-color: #0d5bba;
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+}
+
+#result {
+    background-color: #112240;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 18px;
+    display: none;
+    border: 1px solid #1e2a47;
+}
+
+.winner {
+    font-weight: bold;
+    font-size: 24px;
+    color: #64ffda;
+    margin-top: 15px;
+    text-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+}
+
+.percentage {
+    font-size: 52px;
+    color: #1a73e8;
+    font-weight: bold;
+}
