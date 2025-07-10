@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Draft Pick</title>
+    <link rel="stylesheet" href="dota2_draft_simulator.css">
+</head>
+<body>
+     <div class="header">
+        <div class="timer-container">
+            <div class="player-timer" id="player1Timer">
+                <div class="timer-label">Player 1</div>
+                <div class="time-display">2:10</div>
+            </div>
+            <div class="current-timer" id="currentTimer">
+                <div class="timer-label" id="currentTimerLabel">Turno actual</div>
+                <div class="time-display" id="currentTimeDisplay">2:10</div>
+            </div>
+            <div class="player-timer" id="player2Timer">
+                <div class="timer-label">Player 2</div>
+                <div class="time-display">2:10</div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="pauseBtn">Pausa</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </div>
+
+    <div class="characters-grid" id="charactersGrid"> </div>
+
+    <div class="history-panel" id="historyPanel"> </div>
+
+    <div class="game-over" id="gameOver">
+        ¡Juego terminado!
+    </div>
+    <script src="dota2_draft_simulator.js"></script>
+</body>
+</html>
